@@ -4,11 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pwc_task/service/routes.dart';
 
 void main() {
-  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
 
-  // FlutterNativeSplash.preserve(
-  //   widgetsBinding: widgetsBinding,
-  // );
+  FlutterNativeSplash.preserve(
+    widgetsBinding: widgetsBinding,
+  );
   runApp(TaskApp(
     appRoutes: AppRoutes(),
   ));

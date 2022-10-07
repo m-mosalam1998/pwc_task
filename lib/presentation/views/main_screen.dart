@@ -20,6 +20,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     BlocProvider.of<MoviesApiCubit>(context).serachMovies(title: 'break');
+    FlutterNativeSplash.remove();
     super.initState();
   }
 
