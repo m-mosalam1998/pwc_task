@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:pwc_task/business_logic/movies_search/movies_api_cubit.dart';
 import 'package:pwc_task/data/repository/movie_repository.dart';
 import 'package:pwc_task/data/web_services/movie_api.dart';
-import 'package:pwc_task/presentation/views/splash_screen.dart';
 
 import '../presentation/views/main_screen.dart';
 

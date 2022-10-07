@@ -20,7 +20,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     BlocProvider.of<MoviesApiCubit>(context).serachMovies(title: 'break');
-    FlutterNativeSplash.remove();
+
     super.initState();
   }
 
@@ -66,7 +66,7 @@ class _MainScreenState extends State<MainScreen> {
     return BlocBuilder<MoviesApiCubit, MoviesApiState>(
       builder: (context, state) {
         List<MovieSearchItem> movies =
-            (state is MoviesLoaded) ? (state as MoviesLoaded).movies : [];
+            (state is MoviesLoaded) ? state.movies : [];
         return Expanded(
           child: ListView.builder(
             itemCount: movies.length,

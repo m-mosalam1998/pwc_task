@@ -23,7 +23,7 @@ class CardMovie extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(moive.title.toString()),
-                  Text(moive.imdbID.toString()),
+                  Text(moive.year.toString()),
                 ],
               ),
             ),
